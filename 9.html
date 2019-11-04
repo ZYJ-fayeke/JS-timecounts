@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .p{
+            font-size: 20px;
+            color: darksalmon;
+        }
+        .dis{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<p class="p">本地时间：</p>
+<p id="lotime"></p>
+<div class="warp">
+    <div id="timer">
+        <span id="hours">00</span>
+        <span>H:</span>
+        <span id="minute">00</span>
+        <span>M:</span>
+        <span id="second">00</span>
+        <span>S</span>
+        <input type="button" onclick="changeRun();" id="btn" value="开始" >
+        <input id="btn1" type="button" value="开始计时" onclick="stopCount();cs();timedCount();">
+    </div>
+</div>
+<input id="btnstop" onclick="stopCount();entertime();" type="button" value="停止计时">
+   <ul id='u'>
+    <li class="dis"></li>
+    </ul>
+<script src="timecounts.js"></script>
+</body>
+</html>
+
